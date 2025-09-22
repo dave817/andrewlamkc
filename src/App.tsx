@@ -40,10 +40,10 @@ export default function App() {
       </video>
 
       {/* Fallback Background Image (shows while video loads or if video fails) */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: 'url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwYmlwbGFuZSUyMGZseWluZ3xlbnwxfHx8fDE3NTg1NDkwMjF8MA&ixlib=rb-4.1.0&q=80&w=1080)',
+        style={{
+          backgroundImage: 'url(/images/fallback-background.png)',
           display: videoLoaded ? 'none' : 'block'
         }}
       ></div>
